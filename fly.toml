@@ -1,0 +1,13 @@
+# Fly.io configuration for IELTS Pro Telegram Bot
+app = "ielts-pro-bot"
+primary_region = "fra"
+
+[build]
+  dockerfile = "Dockerfile"
+
+# Telegram bot - background worker sifatida ishlaydi
+# Web server kerak emas
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
